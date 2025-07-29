@@ -1,14 +1,23 @@
 .container {
-    display: grid;
-    grid-gap: 3px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 40px 40px;
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 40px 200px 40px;
 }
 
-.header {}
+.header {
+  grid-column: 1/ 11;
+}
 
-.menu {}
+.menu {
+  grid-row: 1/-1;
+  grid-column: 11 / -1;
+}
 
-.content {}
+.content {
+  grid-column: 1/11;
+}
 
-.footer {}
+.footer {
+  grid-column: 1 / 11;
+}
